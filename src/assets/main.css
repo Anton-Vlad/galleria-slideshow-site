@@ -1,35 +1,80 @@
-@import './base.css';
+@import "./fonts.css";
+@import "./base.css";
+@import "./scss/header.scss";
 
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  font-weight: normal;
+  position: relative;
 }
 
-a,
-.green {
+/* Heading 1 */
+h1 {
+  font-size: 56px;
+  line-height: 64px;
+  margin: 0;
+}
+
+/* Heading 2 */
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+}
+
+/* Heading 3 */
+h3 {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+}
+
+/* Subhead 1 */
+h4,
+.text-subhead-1 {
+  font-size: 15px;
+  line-height: 19px;
+  margin: 0;
+}
+
+/* Subhead 2 */
+h5,
+.text-subhead-2 {
+  font-size: 13px;
+  line-height: 17px;
+  margin: 0;
+}
+
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
-  padding: 3px;
+  padding: 0;
+  color: var(--gal-c-dark-gray);
+}
+
+.text-link-1 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 0.16069rem;
+  margin: 0;
+}
+
+.text-link-2 {
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 9px;
+  line-height: normal;
+  letter-spacing: 0.12056rem;
+  margin: 0;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    color: var(--gal-c-black);
   }
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }

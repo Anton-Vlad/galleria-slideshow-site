@@ -1,10 +1,16 @@
 <script setup>
+import ArtistIcon from '@components/ArtistIcon.vue';
+
 const props = defineProps({
     name: {
         type: String,
         required: true
     },
     artist: {
+        type: String,
+        required: true
+    },
+    slug: {
         type: String,
         required: true
     }
@@ -19,5 +25,7 @@ const props = defineProps({
         <div class="slide-view__subtitle text-subhead-1">
             {{ artist }}
         </div>
+
+        <ArtistIcon :slug="slug" />
     </div>
 </template>

@@ -35,7 +35,7 @@
 
 .slide-hero {
     position: relative;
-    margin-bottom: 236px;
+    margin-bottom: 64px;
 
     .slide-hero__image {
         width: 475px;
@@ -45,7 +45,7 @@
 
     .slide-view__artist {
         position: absolute;
-        bottom: -64px;
+        top: 100%;
         left: calc(100% + 30px);
     }
 
@@ -75,7 +75,7 @@
     .slide-details__year {
         position: absolute;
         top: 0;
-        right: 0;
+        left: 0;
         color: var(--gal-c-milk);
     }
 
@@ -90,3 +90,97 @@
         text-transform: uppercase;
     }
 }
+
+@media (min-width: 768px) {
+    .slide-view {
+        margin-top: 2.5rem;
+
+        .container {
+            flex-direction: column;
+        }
+    }
+
+    .slide-hero {
+        margin-bottom: 64px;
+
+        .slide-hero__image {
+            width: 475px;
+            height: 560px;
+        }
+
+        .slide-view__artist {
+            top: 100%;
+            left: 273px;
+        }
+
+        .slide-view__title {
+            left: 243px;
+            background-color: var(--gal-c-white);
+            padding: 0 0 64px 65px;
+            width: 445px;
+        }
+    }
+
+    .slide-details {
+        max-width: 570px;
+        margin-bottom: 170px;
+
+        .slide-details__year {
+            left: 0;
+        }
+
+        .slide-details__p {
+            padding-top: 75px;
+            padding-right: 0;
+            padding-bottom: 40px;
+            padding-left: 115px;
+        }
+
+        .slide-details__a {
+            left: 115px;
+        }
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .slide-view {
+        .container {
+            flex-direction: row;
+        }
+    }
+
+    .slide-hero {
+        margin-bottom: 236px;
+
+        .slide-view__title {
+            left: calc(100% - 64px);
+        }
+
+        .slide-view__artist {
+            top: 496px;
+            left: 90px;
+        }
+    }
+
+    .slide-details {
+        max-width: 475px;
+        margin-bottom: 0;
+
+        .slide-details__year {
+            left: initial;
+            right: 0;
+        }
+
+        .slide-details__p {
+            padding-top: 115px;
+            padding-right: 125px;
+            padding-bottom: 80px;
+            padding-left: 0;
+        }
+
+        .slide-details__a {
+            left: 0;
+        }
+    }
+  }
+  

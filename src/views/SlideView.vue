@@ -5,7 +5,6 @@ import { useGalleriaStore } from '@/stores/galleria';
 import SlideFooter from '@components/SlideFooter.vue';
 import SlideHeroTitle from '@components/SlideHeroTitle.vue';
 import HeroLargeIcon from '@components/HeroLargeIcon.vue';
-import ArtistIcon from '@components/ArtistIcon.vue';
 import ViewImageButton from '@components/ViewImageButton.vue';
 import GalleryIcon from '@components/GalleryIcon.vue';
 
@@ -30,9 +29,9 @@ watchEffect(() => getSlideInfo(route.params.slideSlug));
         <div class="container">
             <div class="slide-hero">
                 <HeroLargeIcon :slug="slideInfo.slug" />
-                <ArtistIcon :slug="slideInfo.slug" />
+
                 <ViewImageButton @click="() => { showPreview = !showPreview }" />
-                <SlideHeroTitle :name="slideInfo.name" :artist="slideInfo.artist.name" />
+                <SlideHeroTitle :name="slideInfo.name" :artist="slideInfo.artist.name" :slug="slideInfo.slug" />
             </div>
 
             <div class="slide-details">

@@ -2,10 +2,15 @@
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 5;
     width: 100%;
     border-top: 1px solid var(--gal-c-light-gray);
     padding: 25px 0;
     background-color: var(--gal-c-white);
+
+    .container {
+        flex-direction: row;
+    }
 
     .slide-footer__progress {
         position: absolute;

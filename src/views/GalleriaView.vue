@@ -8,7 +8,7 @@ const galleria = useGalleriaStore();
 </script>
 
 <template>
-  <main>
+  <main class="galleria-main">
     <div class="container">
       <MasonryWall :items="galleria.slides" :ssr-columns="1" :column-width="270" :gap="40">
         <template #default="{ item, index }">

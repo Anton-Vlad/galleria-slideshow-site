@@ -1,6 +1,12 @@
 header {
     .logo-link {
         display: inline-flex;
+        max-width: 114px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
     }
 
     .container {
@@ -15,6 +21,10 @@ header {
 
 @media (min-width: 768px) {
     header {
+        .logo-link {
+            max-width: 170px;
+        }
+
         .container {
             padding: 1.75rem 0;
             margin-bottom: 2.5rem;

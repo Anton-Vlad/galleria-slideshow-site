@@ -1,6 +1,5 @@
 <script setup>
 import { useGalleriaStore } from '@/stores/galleria';
-import ArtistIcon from '@components/ArtistIcon.vue';
 import ThumbnailIcon from '@components/ThumbnailIcon.vue';
 import { useRouter } from 'vue-router';
 

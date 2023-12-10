@@ -9,10 +9,12 @@ const galleria = useGalleriaStore();
 
 <template>
   <main>
-    <MasonryWall :items="galleria.slides" :ssr-columns="1" :column-width="270" :gap="40">
-      <template #default="{ item, index }">
-        <gallery-card :index="index" :item="item" />
-      </template>
-    </MasonryWall>
+    <div class="container">
+      <MasonryWall :items="galleria.slides" :ssr-columns="1" :column-width="270" :gap="40">
+        <template #default="{ item, index }">
+          <gallery-card :index="index" :item="item" />
+        </template>
+      </MasonryWall>
+    </div>
   </main>
 </template>

@@ -318,5 +318,34 @@ export const useGalleriaStore = defineStore("galleria", () => {
     return slides.value[index];
   }
 
-  return { slides, currentSlideIndex, goNextSlide, getSlideByIndex };
+  function getSlideBySlug(slug) {
+    return slides.value.filter((x) => x.slug === slug)[0];
+  }
+  function getSlidePagination(slug) {
+    let out = {
+      progress: 0,
+      prev: false,
+      next: false,
+    };
+
+    for (let i = 0; i < slides.value.length; i++) {
+      if (slides.value[i].slug === slug) {
+        out.progress = ((i + 1) / slides.value.length) * 100;
+        out.prev = i > 0 ? slides.value[i - 1].slug : null;
+        out.next =
+          i < slides.value.length - 1 ? slides.value[i + 1].slug : null;
+        break;
+      }
+    }
+    return out;
+  }
+
+  return {
+    slides,
+    currentSlideIndex,
+    goNextSlide,
+    getSlideByIndex,
+    getSlideBySlug,
+    getSlidePagination,
+  };
 });

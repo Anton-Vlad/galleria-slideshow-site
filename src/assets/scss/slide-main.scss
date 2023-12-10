@@ -1,0 +1,92 @@
+.slide-view {
+    margin-top: 6.25rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slide-hero__view {
+        position: absolute;
+        bottom: 16px;
+        left: 16px;
+        display: flex;
+        gap: 14px;
+        align-items: center;
+        border: none;
+        background-color: rgba($color: #000000, $alpha: 0.7546);
+        transition: 0.2s background-color ease-in-out;
+        padding: 14px 16px;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        span {
+            display: flex;
+            align-items: center;
+            line-height: 90%;
+        }
+
+        &:hover {
+            background-color: rgba($color: #ffffff, $alpha: 0.2522);
+        }
+    }
+}
+
+.slide-hero {
+    position: relative;
+    margin-bottom: 236px;
+
+    .slide-hero__image {
+        width: 475px;
+        height: 560px;
+        display: block;
+    }
+
+    .slide-view__artist {
+        position: absolute;
+        bottom: -64px;
+        left: calc(100% + 30px);
+    }
+
+    .slide-view__title {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: calc(100% - 64px);
+        background-color: var(--gal-c-white);
+        padding: 0 0 64px 65px;
+        width: 445px;
+    }
+
+    .slide-view__name {
+        margin-bottom: 24px;
+    }
+
+    .slide-view__subtitle {
+        color: var(--gal-c-dark-gray);
+    }
+}
+
+.slide-details {
+    position: relative;
+    max-width: 475px;
+
+    .slide-details__year {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: var(--gal-c-milk);
+    }
+
+    .slide-details__p {
+        position: relative;
+        padding-top: 115px;
+        padding-right: 125px;
+        padding-bottom: 80px;
+    }
+    .slide-details__a {
+        position: relative;
+        text-transform: uppercase;
+    }
+}

@@ -1,11 +1,14 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 2.5rem 0;
-    border-bottom: 1px solid var(--gal-c-light-gray);
-    margin-bottom: 2.5rem;
-
     .logo-link {
         display: inline-flex;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 0;
+        border-bottom: 1px solid var(--gal-c-light-gray);
+        margin-bottom: 2.5rem;
     }
 }

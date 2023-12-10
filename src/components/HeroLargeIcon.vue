@@ -1,19 +1,19 @@
 <script setup>
-import starryNight from "@/assets/slides/starry-night/artist.jpg";
-import girlWithPearlEarring from "@/assets/slides/girl-with-pearl-earring/artist.jpg";
-import guernica from "@/assets/slides/guernica/artist.jpg";
-import penitentMagdalene from "@/assets/slides/penitent-magdalene/artist.jpg";
-import theStormOnTheSeaOfGalilee from "@/assets/slides/the-storm-on-the-sea-of-galilee/artist.jpg";
-import theGreatWaveOffKanagawa from "@/assets/slides/the-great-wave-off-kanagawa/artist.jpg";
-import vanGoghSelfPortrait from "@/assets/slides/van-gogh-self-portrait/artist.jpg";
-import theSleepingGypsy from "@/assets/slides/the-sleeping-gypsy/artist.jpg";
-import ladyWithAnErmine from "@/assets/slides/lady-with-an-ermine/artist.jpg";
-import theNightCafe from "@/assets/slides/the-night-cafe/artist.jpg";
-import theBasketOfApples from "@/assets/slides/the-basket-of-apples/artist.jpg";
-import theBoyInTheRedVest from "@/assets/slides/the-boy-in-the-red-vest/artist.jpg";
-import arnolfiniPortrait from "@/assets/slides/arnolfini-portrait/artist.jpg";
-import monaLisa from "@/assets/slides/mona-lisa/artist.jpg";
-import theSwing from "@/assets/slides/the-swing/artist.jpg";
+import starryNight from "@/assets/slides/starry-night/hero-large.jpg";
+import girlWithPearlEarring from "@/assets/slides/girl-with-pearl-earring/hero-large.jpg";
+import guernica from "@/assets/slides/guernica/hero-large.jpg";
+import penitentMagdalene from "@/assets/slides/penitent-magdalene/hero-large.jpg";
+import theStormOnTheSeaOfGalilee from "@/assets/slides/the-storm-on-the-sea-of-galilee/hero-large.jpg";
+import theGreatWaveOffKanagawa from "@/assets/slides/the-great-wave-off-kanagawa/hero-large.jpg";
+import vanGoghSelfPortrait from "@/assets/slides/van-gogh-self-portrait/hero-large.jpg";
+import theSleepingGypsy from "@/assets/slides/the-sleeping-gypsy/hero-large.jpg";
+import ladyWithAnErmine from "@/assets/slides/lady-with-an-ermine/hero-large.jpg";
+import theNightCafe from "@/assets/slides/the-night-cafe/hero-large.jpg";
+import theBasketOfApples from "@/assets/slides/the-basket-of-apples/hero-large.jpg";
+import theBoyInTheRedVest from "@/assets/slides/the-boy-in-the-red-vest/hero-large.jpg";
+import arnolfiniPortrait from "@/assets/slides/arnolfini-portrait/hero-large.jpg";
+import monaLisa from "@/assets/slides/mona-lisa/hero-large.jpg";
+import theSwing from "@/assets/slides/the-swing/hero-large.jpg";
 import { computed } from "vue";
 
 const props = defineProps({
@@ -81,5 +81,5 @@ const icon = computed(() => {
 </script>
 
 <template>
-    <img :src="icon" class="slide-view__artist artist-icon" alt="artist-icon">
+    <img :src="icon" class="slide-hero__image" alt="hero-large-icon">
 </template>

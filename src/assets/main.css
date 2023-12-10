@@ -1,6 +1,7 @@
 @import "./fonts.css";
 @import "./base.css";
 @import "./scss/header.scss";
+@import "./scss/gallery-card.scss";
 
 #app {
   max-width: 1280px;
@@ -12,6 +13,7 @@
 /* Heading 1 */
 h1 {
   font-size: 56px;
+  font-weight: 700;
   line-height: 64px;
   margin: 0;
 }
@@ -19,6 +21,7 @@ h1 {
 /* Heading 2 */
 h2 {
   font-size: 24px;
+  font-weight: 700;
   line-height: 29px;
   margin: 0;
 }
@@ -26,6 +29,7 @@ h2 {
 /* Heading 3 */
 h3 {
   font-size: 18px;
+  font-weight: 700;
   line-height: 22px;
   margin: 0;
 }
